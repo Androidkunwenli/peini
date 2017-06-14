@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundf1f1f1"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/view" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white000"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.35"
+            android:background="@color/white000"
+            android:drawableLeft="@mipmap/ic_new_user"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical|left"
+            android:hint="请您输入手机号"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:minLines="11"
+            android:paddingLeft="15dp"
+            android:textColor="#333"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/textSize14" />
+
+        <Button
+            android:id="@+id/btn_remove_phone"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/reset"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/view" />
+
+        <Button
+            android:id="@+id/btn_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="@color/pink_deep"
+            android:textSize="@dimen/textSize14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white000"
+        android:orientation="horizontal"
+        android:paddingRight="15dp">
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/white000"
+            android:drawableLeft="@mipmap/ic_new_code"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical|left"
+            android:hint="请您输入手机验证码"
+            android:inputType="number"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="#333"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/textSize14" />
+
+        <Button
+            android:id="@+id/btn_remove_code"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/reset"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/view" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="9dp"
+        android:background="@color/view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white000"
+        android:orientation="horizontal"
+        android:paddingRight="15dp">
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/white000"
+            android:drawableLeft="@mipmap/ic_new_password"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical|left"
+            android:hint="请您输入6~23位登录密码"
+            android:inputType="textPassword"
+            android:maxLength="23"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="#333"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/textSize14" />
+
+        <CheckBox
+            android:id="@+id/cb_show_password"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/slt_login_show_password_cb"
+            android:button="@null"
+            android:checked="false"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_remove_password"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/reset"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/view" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="9dp"
+        android:background="@color/view" />
+
+    <EditText
+        android:id="@+id/et_inviter_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white000"
+        android:drawableLeft="@mipmap/ic_new_warning"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical|left"
+        android:hint="选填：请您填写邀请人ID"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#333"
+        android:textColorHint="@color/gray"
+        android:textSize="@dimen/textSize14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="*注：无人邀请可不填"
+        android:textColor="@color/grey_8f8f8f" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/slt_button"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="完成注册"
+        android:textColor="#fff"
+        android:textSize="@dimen/textSize16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="注册表示您已同意 "
+            android:textColor="@color/grey_8f8f8f" />
+
+        <TextView
+            android:id="@+id/tv_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="服务条款"
+            android:textColor="@color/pink_deep" />
+    </LinearLayout>
+</LinearLayout>

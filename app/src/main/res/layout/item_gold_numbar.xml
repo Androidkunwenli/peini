@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_gold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/x15"
+    android:background="@drawable/gold_shape"
+    android:gravity="center"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:text="金币95535"
+    android:textColor="@color/white000"
+    android:textSize="@dimen/textSize14"/>

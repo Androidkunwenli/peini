@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/filter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/label_selector_filter"
+        android:button="@null"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#fff">
+        <!--        android:text="吃饭"
+        -->
+    </CheckBox>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sdk-2.9.5.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/d13e9df616610e24fe79ab6626287be5b885bd94/output/jars/libs/GetuiSDK2.9.5.0.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/d13e9df616610e24fe79ab6626287be5b885bd94/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/d13e9df616610e24fe79ab6626287be5b885bd94/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

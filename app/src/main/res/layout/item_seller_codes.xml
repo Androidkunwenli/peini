@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white000"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_viewpager_bj"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y290"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_peini_fangxing"/>
+
+        <com.jude.rollviewpager.RollPagerView
+            android:id="@+id/slider_vp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y290"
+            app:rollviewpager_play_delay="3000"/>
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_item_seller_codes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white000"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/backgroundf1f1f1"/>
+</LinearLayout>

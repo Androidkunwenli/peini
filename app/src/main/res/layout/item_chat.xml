@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="15:00"
+        android:textColor="@color/text999"
+        android:textSize="@dimen/textSize14"/>
+
+    <LinearLayout
+        android:id="@+id/ta_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="65dp"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/meinv"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/chatfrom_bg_focused"
+            android:padding="5dp"
+            android:text="我不知道你要跟我哦我说什么我不知道你要跟我哦我说什么我不知道你要跟我哦我说什么我不知道你要跟我哦我说什么我不知道你要跟我哦我说什么"
+            android:textColor="@color/text333"
+            android:textSize="@dimen/textSize14"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mi_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:gravity="center|right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/chatto_bg_focused"
+            android:gravity="right|center"
+            android:padding="5dp"
+            android:text="不知道说知道说知道说知道说知道说知道说什么不知道说知道说知道说知道说知道说知道说什么"
+            android:textColor="@color/text333"
+            android:textSize="@dimen/textSize14"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/meinv"/>
+    </LinearLayout>
+</LinearLayout>

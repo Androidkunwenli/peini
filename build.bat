@@ -1,0 +1,1 @@
+gradlew -Pmarket=markets.txt clean apkRelease

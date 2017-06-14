@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroundf1f1f1"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <WebView
+        android:id="@+id/gold_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_areward"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/y100"
+        android:background="@drawable/button_red"
+        android:gravity="center"
+        android:text="返回"
+        android:textColor="@color/white000"
+        android:textSize="@dimen/textSize16"
+        android:visibility="gone"/>
+</LinearLayout>

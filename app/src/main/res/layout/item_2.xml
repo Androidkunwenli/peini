@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_selector"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/selector_bj"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/seller_seller"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="区域"
+            android:textColor="#333"
+            android:textSize="@dimen/textSize16" />
+
+        <ImageView
+            android:id="@+id/image_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@mipmap/xiala" />
+
+    </LinearLayout>
+
+    <View
+    android:layout_width="1dp"
+    android:layout_height="25dp"
+    android:layout_gravity="center_vertical"
+    android:background="@color/view" />
+
+    <LinearLayout
+        android:id="@+id/seller_distance"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="距离"
+            android:textColor="#333"
+            android:textSize="@dimen/textSize16" />
+
+        <ImageView
+            android:id="@+id/image_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@mipmap/xiala" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="25dp"
+        android:background="@color/view" />
+
+    <LinearLayout
+        android:id="@+id/seller_typeofoperation"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="业态"
+            android:textColor="#333"
+            android:textSize="@dimen/textSize16" />
+
+        <ImageView
+            android:id="@+id/image_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@mipmap/xiala" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="25dp"
+        android:background="@color/view" />
+
+    <LinearLayout
+        android:id="@+id/seller_sort"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="排序"
+            android:textColor="#333"
+            android:textSize="@dimen/textSize16" />
+
+        <ImageView
+            android:id="@+id/image_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@mipmap/xiala" />
+    </LinearLayout>
+</LinearLayout>

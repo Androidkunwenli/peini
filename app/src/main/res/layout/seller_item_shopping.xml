@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/item_selector"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white000"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.jsz.peini.ui.view.RoundAngleImageView
+            android:id="@+id/imageSrc"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_peini_fangxing"
+            app:roundHeight="5dp"
+            app:roundWidth="5dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/sellerName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:text="胡氏大盘鸡(博物馆店)"
+                            android:textColor="#333"
+                            android:textSize="@dimen/textSize16"/>
+
+                        <ImageView
+                            android:id="@+id/iv_weather_order"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:src="@mipmap/ic_order"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical">
+
+                        <!--<com.example.xlhratingbar_lib.XLHRatingBar-->
+                        <!--xmlns:xlhRatingBar="http://schemas.android.com/apk/res-auto"-->
+                        <!--android:id="@+id/sellerScore"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--xlhRatingBar:countSelected="1"-->
+                        <!--xlhRatingBar:dividerWidth="2dp"-->
+                        <!--xlhRatingBar:starCount="5"-->
+                        <!--xlhRatingBar:stateResId="@drawable/seller_pingja"-->
+                        <!--xlhRatingBar:widthAndHeight="15dp"/>-->
+
+                        <!--<com.jsz.peini.ui.view.CustomRatingBar-->
+                        <!--xmlns:app="http://schemas.android.com/apk/res/com.jsz.peini"-->
+                        <!---->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="15dp"-->
+                        <!--android:visibility="gone"-->
+                        <!--app:clickable="false"-->
+                        <!--app:rating="2.7"-->
+                        <!--app:space="0.1"-->
+                        <!--app:starDst="@drawable/seller_pingjia_huise"-->
+                        <!--app:starNumber="5"-->
+                        <!--app:starSrc="@drawable/seller_pingja_hongse"-->
+                        <!--app:step="0.1"/>-->
+
+                        <RatingBar
+                            android:id="@+id/sellerScore"
+                            style="@style/roomRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:numStars="5"
+                            android:rating="4"
+                            android:stepSize="0.1">
+                        </RatingBar>
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="15dp"
+                            android:gravity="center|right"
+                            android:text="¥78/人"
+                            android:textColor="#666"
+                            android:textSize="@dimen/textSize14"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/districtNamelabelsName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="河北 | 小吃"
+                        android:textColor="#999"
+                        android:textSize="@dimen/textSize14"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:text="1.5km"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/seller_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/divider_e6e6e6"/>
+
+                <LinearLayout
+                    android:id="@+id/countJB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="8dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/countJB_image"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:src="@mipmap/maidan"/>
+
+                    <TextView
+                        android:id="@+id/countJB_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="每满10元消耗一金币"
+                        android:textColor="#999"
+                        android:textSize="@dimen/textSize12"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/countMJ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="4dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/countMJ_image"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:src="@mipmap/youhui"/>
+
+                    <TextView
+                        android:id="@+id/countMJ_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="每满10元消耗一金币"
+                        android:textColor="#999"
+                        android:textSize="@dimen/textSize12"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/view"/>
+</LinearLayout>

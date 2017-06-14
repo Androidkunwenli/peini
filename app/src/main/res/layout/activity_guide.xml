@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white000">
+
+
+    <com.jude.rollviewpager.RollPagerView
+        android:id="@+id/guide_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <!--<Button-->
+    <!--android:id="@+id/guide_bt_tiaochu"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:text="跳过"-->
+    <!--android:gravity="center"-->
+    <!--android:textSize="18sp"-->
+    <!--android:paddingLeft="15dp"-->
+    <!--android:paddingRight="15dp"-->
+    <!--android:paddingTop="15dp"-->
+    <!--android:drawableBottom="@drawable/ic_line"-->
+    <!--android:drawablePadding="2dp"-->
+    <!--android:paddingBottom="15dp"-->
+    <!--android:background="@color/red"-->
+    <!--android:textColor="#fff" />-->
+
+    <TextView
+        android:id="@+id/tv_jump_in"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_4circular_bj"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="跳过"
+        android:textColor="#fff"
+        android:textSize="@dimen/textSize14"
+        android:visibility="visible"/>
+
+</RelativeLayout>

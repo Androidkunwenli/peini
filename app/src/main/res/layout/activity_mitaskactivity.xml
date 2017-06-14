@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroundf1f1f1"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/view"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tlayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white000"
+        app:tabIndicatorColor="@color/red"
+        app:tabIndicatorHeight="2dp"
+        app:tabSelectedTextColor="@color/red"
+        app:tabTextAppearance="@style/TabLayoutRankingStyle"
+        app:tabTextColor="@color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y15"
+        android:background="@drawable/shape_string"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white000"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_regCnt_finishRatio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:maxLines="1"
+            android:paddingLeft="15dp"
+            android:text="任务状态(已参加任务0个)"
+            android:textColor="@color/text333"
+            android:textSize="@dimen/textSize16"/>
+        <!-- android:text="任务状态(已参加任务0个,完成度0%)"-->
+
+        <TextView
+            android:id="@+id/task_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/textSize15"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:text="筛选"
+            android:textColor="@color/RED_FB4E30"
+            android:textSize="@dimen/textSize16"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y15"
+        android:background="@drawable/shape_string"/>
+
+    <com.jsz.peini.widget.ProgressActivity
+        android:id="@+id/pa_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundf1f1f1"
+        android:orientation="vertical">
+
+        <include layout="@layout/recyclerview"/>
+    </com.jsz.peini.widget.ProgressActivity>
+</LinearLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white000"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/view"/>
+
+
+            <ImageView
+                android:id="@+id/couponImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_peini_banser"/>
+
+
+            <TextView
+                android:id="@+id/couponmoney_rulemoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:paddingLeft="3dp"
+                android:text="40元抵50元"
+                android:textColor="@color/white000"
+                android:textSize="@dimen/textSize16"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/view"/>
+
+            <TextView
+                android:id="@+id/couponName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="海底捞现金券"
+                android:textColor="@color/RED_FB4E30"
+                android:textSize="@dimen/textSize16"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/couponmoney_rulemoney_big"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="45元购此券结账时可抵50元现金"
+                android:textColor="@color/RED_FB4E30"
+                android:textSize="@dimen/textSize15"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="商品介绍:"
+                    android:textColor="@color/text333"
+                    android:textSize="@dimen/textSize16"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/couponDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:text="                    "
+                    android:textColor="@color/text333"
+                    android:textSize="@dimen/textSize15"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="使用规则:"
+                    android:textColor="@color/text333"
+                    android:textSize="@dimen/textSize16"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/couponRange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:text="                "
+                    android:textColor="@color/text333"
+                    android:textSize="@dimen/textSize16"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="有效期:"
+                    android:textColor="@color/text333"
+                    android:textSize="@dimen/textSize16"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/lastDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:text="                "
+                    android:textColor="@color/text333"
+                    android:textSize="@dimen/textSize16"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="温馨提示:"
+                    android:textColor="@color/text333"
+                    android:textSize="@dimen/textSize16"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/remindText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:text="              "
+                    android:textColor="@color/text333"
+                    android:textSize="@dimen/textSize16"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@mipmap/integra_message"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_change"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f2f2f2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="单价: "
+            android:textColor="@color/text333"
+            android:textSize="@dimen/textSize16"/>
+
+        <TextView
+            android:id="@+id/getNum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textColor="@color/RED_FB4E30"
+            android:textSize="@dimen/textSize16"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text=" 积分"
+            android:textColor="@color/text333"
+            android:textSize="@dimen/textSize16"/>
+
+        <Button
+            android:id="@+id/btn_exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/RED_FB4E30"
+            android:text="兑换"
+            android:textColor="@color/white000"
+            android:textSize="@dimen/textSize15"/>
+    </LinearLayout>
+</LinearLayout>

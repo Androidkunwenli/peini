@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white000"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/view"/>
+
+    <include layout="@layout/recyclerview"/>
+
+    <TextView
+        android:id="@+id/album_upload"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/RED_FB4E30"
+        android:gravity="center"
+        android:text="上传照片"
+        android:textColor="@color/white000"
+        android:textSize="@dimen/textSize18"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/album_delete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/album_delete_number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/white000"
+            android:gravity="center"
+            android:text="已选择 0 张照片"
+            android:textColor="@color/text333"
+            android:textSize="@dimen/textSize18"/>
+
+        <TextView
+            android:id="@+id/album_delete_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:background="@color/RED_FB4E30"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white000"
+            android:textSize="@dimen/textSize18"/>
+    </LinearLayout>
+</LinearLayout>

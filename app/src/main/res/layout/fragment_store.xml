@@ -1,0 +1,19 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_seller_title_bar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundf1f1f1">
+
+        <include layout="@layout/recyclerview"/>
+
+        <include layout="@layout/store_item_filter"/>
+    </FrameLayout>
+</LinearLayout>
+

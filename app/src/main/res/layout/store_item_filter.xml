@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_store_item_filter"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/selector_bj"
+    android:gravity="center_vertical"
+    android:minHeight="40dp"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/tv_store_filter_area"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawableRight="@mipmap/xiala"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="区域"
+        android:textColor="#333"
+        android:textSize="@dimen/textSize16" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/view" />
+
+    <TextView
+        android:id="@+id/tv_store_filter_distance"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawableRight="@mipmap/xiala"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="距离"
+        android:textColor="#333"
+        android:textSize="@dimen/textSize16" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="25dp"
+        android:background="@color/view" />
+
+    <TextView
+        android:id="@+id/tv_store_filter_types"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawableRight="@mipmap/xiala"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="业态"
+        android:textColor="#333"
+        android:textSize="@dimen/textSize16" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="25dp"
+        android:background="@color/view" />
+
+    <TextView
+        android:id="@+id/tv_store_filter_sort"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawableRight="@mipmap/xiala"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="排序"
+        android:textColor="#333"
+        android:textSize="@dimen/textSize16" />
+
+</LinearLayout>

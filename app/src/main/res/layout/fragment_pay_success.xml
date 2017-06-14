@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white000"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/data_success"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="付款成功! 参与评价可获得大量积分哦~"
+            android:textColor="@color/RED_FB4E30"
+            android:textSize="@dimen/textSize16"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroundf1f1f1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商家点评: "
+            android:textSize="@dimen/textSize16"/>
+
+        <TextView
+            android:id="@+id/tv_sellerInfoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text=""/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/backgroundf1f1f1"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="服务态度: "
+                android:textSize="@dimen/textSize16"/>
+
+            <com.example.xlhratingbar_lib.XLHRatingBar xmlns:xlhRatingBar="http://schemas.android.com/apk/res-auto"
+                                                       android:id="@+id/ratingBar"
+                                                       android:layout_width="wrap_content"
+                                                       android:layout_height="match_parent"
+                                                       android:orientation="horizontal"
+                                                       xlhRatingBar:canEdit="true"
+                                                       xlhRatingBar:countSelected="0"
+                                                       xlhRatingBar:dividerWidth="6dp"
+                                                       xlhRatingBar:starCount="5"
+                                                       xlhRatingBar:stateResId="@drawable/pay_success_appraise"
+                                                       xlhRatingBar:widthAndHeight="@dimen/y40"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="店面环境: "
+                android:textSize="@dimen/textSize16"/>
+
+            <com.example.xlhratingbar_lib.XLHRatingBar xmlns:xlhRatingBar="http://schemas.android.com/apk/res-auto"
+                                                       android:id="@+id/ratingBar2"
+                                                       android:layout_width="wrap_content"
+                                                       android:layout_height="match_parent"
+                                                       android:orientation="horizontal"
+                                                       xlhRatingBar:canEdit="true"
+                                                       xlhRatingBar:countSelected="0"
+                                                       xlhRatingBar:dividerWidth="6dp"
+                                                       xlhRatingBar:starCount="5"
+                                                       xlhRatingBar:stateResId="@drawable/pay_success_appraise"
+                                                       xlhRatingBar:widthAndHeight="@dimen/y40"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="餐点品味: "
+                android:textSize="@dimen/textSize16"/>
+
+            <com.example.xlhratingbar_lib.XLHRatingBar xmlns:xlhRatingBar="http://schemas.android.com/apk/res-auto"
+                                                       android:id="@+id/ratingBar3"
+                                                       android:layout_width="wrap_content"
+                                                       android:layout_height="match_parent"
+                                                       android:orientation="horizontal"
+                                                       xlhRatingBar:canEdit="true"
+                                                       xlhRatingBar:countSelected="0"
+                                                       xlhRatingBar:dividerWidth="6dp"
+                                                       xlhRatingBar:starCount="5"
+                                                       xlhRatingBar:stateResId="@drawable/pay_success_appraise"
+                                                       xlhRatingBar:widthAndHeight="@dimen/y40"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroundf1f1f1"/>
+
+    <Button
+        android:id="@+id/pay_success"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_red"
+        android:text="评价"
+        android:textColor="#fff"
+        android:textSize="@dimen/textSize17"/>
+
+
+</LinearLayout>

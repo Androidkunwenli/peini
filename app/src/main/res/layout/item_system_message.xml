@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_system_message"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_message_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y30"
+        android:layout_marginTop="@dimen/y30"
+        android:gravity="center"
+        android:textColor="#999"
+        android:textSize="@dimen/textSize14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:background="@drawable/dot_nomal"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/y20"
+            android:textColor="@color/text333"
+            android:textSize="@dimen/textSize16" />
+
+        <TextView
+            android:id="@+id/tv_message_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/y15"
+            android:textColor="@color/text999"
+            android:textSize="@dimen/textSize14" />
+
+        <TextView
+            android:id="@+id/tv_message_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="35px"
+            android:gravity="left"
+            android:textColor="@color/text333"
+            android:textSize="@dimen/textSize14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:layout_marginTop="@dimen/y20"
+            android:background="@color/view" />
+
+        <TextView
+            android:id="@+id/btn_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/backselect"
+            android:gravity="left|center_vertical"
+            android:padding="15dp"
+            android:text="查看详情"
+            android:textColor="@color/text333"
+            android:textSize="@dimen/textSize14" />
+    </LinearLayout>
+
+</LinearLayout>

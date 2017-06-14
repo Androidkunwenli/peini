@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroundf1f1f1"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/view"/>
+
+    <TextView
+        android:id="@+id/phone_number_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/text333"
+        android:textSize="@dimen/textSize14"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white000"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_password_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/ic_new_password"/>
+
+        <EditText
+            android:id="@+id/password_edt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="2px"
+            android:layout_toRightOf="@id/iv_password_icon"
+            android:background="@null"
+            android:hint="请您输入新的登录密码"
+            android:inputType="textPassword"
+            android:maxLength="23"
+            android:textColor="@color/text333"
+            android:textColorHint="@color/text999"
+            android:textSize="@dimen/textSize15"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/show_password_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/password_show"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@mipmap/password_show"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/password_disappear"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@mipmap/password_display"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/password_clean"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:background="@mipmap/reset"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/view"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white000"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_password_again_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/ic_new_password"/>
+
+        <EditText
+            android:id="@+id/password_again_edt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="2px"
+            android:layout_toRightOf="@id/iv_password_again_icon"
+            android:background="@null"
+            android:hint="请您再次输入登录密码"
+            android:inputType="textPassword"
+            android:maxLength="23"
+            android:textColor="@color/text333"
+            android:textColorHint="@color/text999"
+            android:textSize="@dimen/textSize15"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/show_password_again_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/password_again_show"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@mipmap/password_show"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/password_again_disappear"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@mipmap/password_display"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/password_again_clean"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:background="@mipmap/reset"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/confirm_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/nocheckbutton"
+        android:enabled="false"
+        android:text="确定"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/textSize16"/>
+</LinearLayout>

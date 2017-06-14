@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:zhy="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white000"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title_bj">
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/title_bj"
+            android:gravity="center|left"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@mipmap/back"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_task_more"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@mipmap/more"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_title_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text333"
+            android:textSize="@dimen/textSize16"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <com.jsz.peini.widget.ProgressActivity
+        android:id="@+id/pa_progress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:id="@+id/sv_show_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/is_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.jude.rollviewpager.RollPagerView
+                        android:id="@+id/task_vp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y470"
+                        app:rollviewpager_play_delay="3000"/>
+
+                    <ImageView
+                        android:id="@+id/iv_viewpager_bj"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y470"
+                        android:background="@drawable/ic_peini_fangxing"/>
+
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/view"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_user_avatar"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/white0000000"
+                        android:src="@mipmap/ic_nan"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_user_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:maxLength="18"
+                                android:maxLines="1"
+                                android:paddingRight="3dp"
+                                android:textColor="#333"
+                                android:textSize="@dimen/textSize15"/>
+                            <!--android:text="陪你PN"-->
+
+
+                            <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_marginLeft="9dp"-->
+                            <!--android:layout_toRightOf="@id/tv_user_name"-->
+                            <!--android:gravity="center">-->
+
+                            <!--<ImageView-->
+                            <!--android:id="@+id/iv_user_sex"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@mipmap/nan"-->
+                            <!--android:gravity="center"/>-->
+
+                            <!--<TextView-->
+                            <!--android:id="@+id/tv_user_age"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_marginLeft="@dimen/x3"-->
+                            <!--android:layout_marginStart="3dp"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="26"-->
+                            <!--android:textColor="#28c7dd"-->
+                            <!--android:textSize="@dimen/textSize15"/>-->
+                            <!--</LinearLayout>-->
+                            <include layout="@layout/item_age_sex"/>
+
+                            <include
+                                layout="@layout/item_ranking_gold_buy_integrity"/>
+
+                            <TextView
+                                android:id="@+id/tv_task_distance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:gravity="right"
+                                android:maxLines="1"
+                                android:text="0km"
+                                android:textColor="#9a9a9a"
+                                android:textSize="@dimen/textSize14"/>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/tv_reputation_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="信用值:"
+                                android:textColor="#9a9a9a"
+                                android:textSize="@dimen/textSize15"/>
+
+                            <TextView
+                                android:id="@+id/tv_task_pay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:gravity="center_vertical"
+                                android:textColor="#fa4e31"
+                                android:textSize="@dimen/textSize15"/>
+                            <!--android:text="我买单"-->
+
+                            <TextView
+                                android:id="@+id/tv_user_reputation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/tv_reputation_label"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="#9a9a9a"
+                                android:textSize="@dimen/textSize15"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/view"
+                    android:paddingLeft="10dp"/>
+
+                <com.zhy.view.flowlayout.TagFlowLayout
+                    android:id="@+id/filter_flow_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y15"
+                    android:paddingLeft="10dp"
+                    zhy:auto_select_effect="false"
+                    zhy:max_select="-1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y15"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y15"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="目的 · "
+                            android:textColor="@color/text999"
+                            android:textSize="@dimen/textSize16"/>
+
+                        <TextView
+                            android:id="@+id/task_labelsname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/text333"
+                            android:textSize="@dimen/textSize16"/>
+                        <!--android:text="餐饮"-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_sellermeassage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y15"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="地点 · "
+                            android:textColor="#999999"
+                            android:textSize="@dimen/textSize16"/>
+
+                        <TextView
+                            android:id="@+id/task_map"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/textSize16"/>
+                        <!--android:text="海底捞 (王府井店)"-->
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="3dp"
+                            android:paddingLeft="4dp"
+                            android:src="@mipmap/sanjiao"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y15"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="时间 · "
+                            android:textColor="#999999"
+                            android:textSize="@dimen/textSize16"/>
+
+                        <TextView
+                            android:id="@+id/task_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/textSize16"/>
+                        <!--android:text="今天 18:00"-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y15"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="希望 · "
+                            android:textColor="#999999"
+                            android:textSize="@dimen/textSize16"/>
+
+                        <TextView
+                            android:id="@+id/tv_expect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/textSize16"/>
+                        <!--android:text="来接我"-->
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/y15"
+                    android:background="@color/view"/>
+
+                <TextView
+                    android:id="@+id/task_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y15"
+                    android:padding="8dp"
+                    android:textColor="@color/text333"
+                    android:textSize="@dimen/textSize16"/>
+                <!--android:text="正在加载..."-->
+            </LinearLayout>
+        </ScrollView>
+    </com.jsz.peini.widget.ProgressActivity>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/task_mejoin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#fa4f30"
+            android:text="我要参加"
+            android:textColor="#fff"
+            android:textSize="@dimen/textSize16"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/task_linear1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/task_youjoin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="#ccc"
+                android:text="(Ta买单)"
+                android:textColor="#fff"
+                android:textSize="@dimen/textSize16"/>
+
+            <Button
+                android:id="@+id/task_telephone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#fcad31"
+                android:text="联系Ta"
+                android:textColor="#fff"
+                android:textSize="@dimen/textSize16"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/task_linear3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/task_mi_pay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/RED_FB4E30"
+                android:text="我买单"
+                android:textColor="#fff"
+                android:textSize="@dimen/textSize16"/>
+
+            <Button
+                android:id="@+id/contacthim"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#fcad31"
+                android:text="联系Ta"
+                android:textColor="#fff"
+                android:textSize="@dimen/textSize16"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/task_linear2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/bt_gotothishouse1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="#fa4f30"
+                android:text="再来一单"
+                android:textColor="#fff"
+                android:textSize="@dimen/textSize16"/>
+
+            <Button
+                android:id="@+id/seller_success_pingjia"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#fcad31"
+                android:text="去评价"
+                android:textColor="#fff"
+                android:textSize="@dimen/textSize16"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_gotothishouse"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#fa4f30"
+            android:text="还去这家"
+            android:textColor="#fff"
+            android:textSize="@dimen/textSize16"
+            android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>

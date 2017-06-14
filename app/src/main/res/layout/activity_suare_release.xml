@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroundf1f1f1"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/view"/>
+
+    <EditText
+        android:id="@+id/release_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white000"
+        android:gravity="left"
+        android:hint="把您这一刻的想法记录下来吧~"
+        android:maxLength="3000"
+        android:minHeight="150dp"
+        android:padding="5dp"
+        android:textColorHint="#CCC"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="@dimen/textSize16"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/release_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white000"
+        android:padding="5dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:background="@color/view"/>
+
+    <TextView
+        android:id="@+id/release_address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:clickable="true"
+        android:drawableLeft="@mipmap/map"
+        android:drawablePadding="5dp"
+        android:drawableRight="@mipmap/backselect"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="所在位置"
+        android:textColor="@color/text999"
+        android:textSize="@dimen/textSize15"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/view"/>
+</LinearLayout>

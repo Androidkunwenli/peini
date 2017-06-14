@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y45"
+        android:layout_marginBottom="@dimen/y17"
+        android:layout_marginTop="@dimen/y17"
+        android:background="@drawable/search_bj"
+        android:gravity="center"
+        android:paddingLeft="@dimen/x5"
+        android:paddingRight="@dimen/x5">
+
+        <TextView
+            android:id="@+id/seller_map"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y50"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableLeft="@mipmap/map"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="长安区东大街5号"
+            android:textColor="@color/text999" />
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y50"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="1.6km"
+            android:textColor="@color/text999"
+            android:textSize="@dimen/textSize15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/y150"
+        android:layout_weight="1"
+        android:background="@drawable/tabuition_bj"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y500"
+            android:layout_marginTop="@dimen/y20">
+
+            <ImageView
+                android:id="@+id/headbj"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/headIV"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y500"
+                android:scaleType="centerInside" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y10"
+            android:gravity="center|left">
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="正在加载..."
+                android:textColor="@color/text333"
+                android:textSize="@dimen/textSize15" />
+
+            <TextView
+                android:id="@+id/task_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="1.6km"
+                android:textColor="#9a9a9a"
+                android:textSize="@dimen/textSize14"
+                android:visibility="gone" />
+
+            <include layout="@layout/item_age_sex" />
+
+            <include layout="@layout/item_ranking_gold_buy_integrity" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y7">
+
+            <TextView
+                android:id="@+id/tabuiation_credit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="信用值:"
+                android:textColor="@color/text999"
+                android:textSize="@dimen/textSize15" />
+
+            <TextView
+                android:id="@+id/task_reputation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="99"
+                android:textColor="@color/text999"
+                android:textSize="@dimen/textSize15" />
+
+            <TextView
+                android:id="@+id/task_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/RED_FB4E30"
+                android:textSize="@dimen/textSize15" />
+            <!--  android:text="AA制"-->
+        </LinearLayout>
+
+        <View
+            android:id="@+id/task_Line"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="@dimen/y7"
+            android:background="@color/view" />
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/filter_flowlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y10"
+            zhy:auto_select_effect="false"
+            zhy:max_select="-1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y7"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="目的 · "
+                    android:textColor="@color/text999"
+                    android:textSize="@dimen/textSize15" />
+
+                <TextView
+                    android:id="@+id/task_labelsname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/textSize15" />
+                <!--android:text="餐饮"-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x7"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地点 · "
+                    android:textColor="@color/text999"
+                    android:textSize="@dimen/textSize15" />
+
+                <TextView
+                    android:id="@+id/task_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text333"
+                    android:textSize="@dimen/textSize15" />
+                <!--android:text="海底捞 (王府井店)"-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x7"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="时间 · "
+                    android:textColor="@color/text999"
+                    android:textSize="@dimen/textSize15" />
+
+                <TextView
+                    android:id="@+id/task_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text333"
+                    android:textSize="@dimen/textSize15" />
+                <!--  android:text="今天 18:00"-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x7"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="希望 · "
+                    android:textColor="@color/text999"
+                    android:textSize="@dimen/textSize15" />
+
+                <TextView
+                    android:id="@+id/task_laijiwwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text333"
+                    android:textSize="@dimen/textSize15" />
+                <!--android:text="来接我"-->
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

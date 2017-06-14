@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_name_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white000"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:text="石家庄"
+        android:textColor="#333"
+        android:textSize="@dimen/textSize16" />
+
+
+</LinearLayout>

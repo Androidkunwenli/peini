@@ -1,0 +1,523 @@
+[
+  {
+    "nationList": [
+      {
+        "codes": 101,
+        "codesNum": 1,
+        "codesName": "汉族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 2,
+        "codesName": "蒙古族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 3,
+        "codesName": "回族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 4,
+        "codesName": "藏族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 5,
+        "codesName": "维吾尔族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 6,
+        "codesName": "苗族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 7,
+        "codesName": "彝族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 8,
+        "codesName": "壮族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 9,
+        "codesName": "布依族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 10,
+        "codesName": "朝鲜族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 11,
+        "codesName": "满族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 12,
+        "codesName": "侗族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 13,
+        "codesName": "瑶族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 14,
+        "codesName": "白族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 15,
+        "codesName": "土家族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 16,
+        "codesName": "哈尼族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 17,
+        "codesName": "哈萨克族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 18,
+        "codesName": "傣族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 19,
+        "codesName": "黎族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 20,
+        "codesName": "傈僳族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 21,
+        "codesName": "佤族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 22,
+        "codesName": "畲族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 23,
+        "codesName": "高山族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 24,
+        "codesName": "拉祜族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 25,
+        "codesName": "水族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 26,
+        "codesName": "东乡族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 27,
+        "codesName": "纳西族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 28,
+        "codesName": "景颇族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 29,
+        "codesName": "柯尔克孜族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 30,
+        "codesName": "土族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 31,
+        "codesName": "达斡尔族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 32,
+        "codesName": "仫佬族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 33,
+        "codesName": "羌族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 34,
+        "codesName": "布朗族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 35,
+        "codesName": "撒拉族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 36,
+        "codesName": "毛难族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 37,
+        "codesName": "仡佬族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 38,
+        "codesName": "锡伯族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 39,
+        "codesName": "阿昌族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 40,
+        "codesName": "普米族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 41,
+        "codesName": "塔吉克族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 42,
+        "codesName": "怒族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 43,
+        "codesName": "乌兹别克族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 44,
+        "codesName": "俄罗斯族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 45,
+        "codesName": "鄂温克族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 46,
+        "codesName": "崩龙族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 47,
+        "codesName": "保安族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 48,
+        "codesName": "裕固族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 49,
+        "codesName": "京族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 50,
+        "codesName": "塔塔尔族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 51,
+        "codesName": "独龙族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 52,
+        "codesName": "鄂伦春族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 53,
+        "codesName": "赫哲族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 54,
+        "codesName": "门巴族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 55,
+        "codesName": "珞巴族"
+      },
+      {
+        "codes": 101,
+        "codesNum": 56,
+        "codesName": "基诺族"
+      }
+    ],
+    "constellationList": [
+      {
+        "codes": 103,
+        "codesNum": 1,
+        "codesName": "白羊座"
+      },
+      {
+        "codes": 103,
+        "codesNum": 2,
+        "codesName": "金牛座"
+      },
+      {
+        "codes": 103,
+        "codesNum": 3,
+        "codesName": "双子座"
+      },
+      {
+        "codes": 103,
+        "codesNum": 4,
+        "codesName": "巨蟹座"
+      },
+      {
+        "codes": 103,
+        "codesNum": 5,
+        "codesName": "狮子座"
+      },
+      {
+        "codes": 103,
+        "codesNum": 6,
+        "codesName": "处女座"
+      },
+      {
+        "codes": 103,
+        "codesNum": 7,
+        "codesName": "天平座"
+      },
+      {
+        "codes": 103,
+        "codesNum": 8,
+        "codesName": "天蝎座"
+      },
+      {
+        "codes": 103,
+        "codesNum": 9,
+        "codesName": "射手座"
+      },
+      {
+        "codes": 103,
+        "codesNum": 10,
+        "codesName": "摩羯座"
+      },
+      {
+        "codes": 103,
+        "codesNum": 11,
+        "codesName": "水瓶座"
+      },
+      {
+        "codes": 103,
+        "codesNum": 12,
+        "codesName": "双鱼座"
+      }
+    ],
+    "emotionList": [
+      {
+        "codes": 104,
+        "codesNum": 1,
+        "codesName": "单身"
+      },
+      {
+        "codes": 104,
+        "codesNum": 2,
+        "codesName": "热恋"
+      },
+      {
+        "codes": 104,
+        "codesNum": 3,
+        "codesName": "已婚"
+      },
+      {
+        "codes": 104,
+        "codesNum": 4,
+        "codesName": "离异"
+      }
+    ],
+    "degreeList": [
+      {
+        "codes": 105,
+        "codesNum": 1,
+        "codesName": "小学"
+      },
+      {
+        "codes": 105,
+        "codesNum": 2,
+        "codesName": "初中"
+      },
+      {
+        "codes": 105,
+        "codesNum": 3,
+        "codesName": "高中"
+      },
+      {
+        "codes": 105,
+        "codesNum": 4,
+        "codesName": "职中"
+      },
+      {
+        "codes": 105,
+        "codesNum": 5,
+        "codesName": "大专"
+      },
+      {
+        "codes": 105,
+        "codesNum": 6,
+        "codesName": "本科"
+      },
+      {
+        "codes": 105,
+        "codesNum": 7,
+        "codesName": "研究生"
+      },
+      {
+        "codes": 105,
+        "codesNum": 8,
+        "codesName": "硕士"
+      },
+      {
+        "codes": 105,
+        "codesNum": 9,
+        "codesName": "博士"
+      },
+      {
+        "codes": 105,
+        "codesNum": 10,
+        "codesName": "博士后"
+      }
+    ],
+    "industryList": [
+      {
+        "codes": 106,
+        "codesNum": 1,
+        "codesName": "计算机/互联网/通信"
+      },
+      {
+        "codes": 106,
+        "codesNum": 2,
+        "codesName": "医疗/护理/制药"
+      },
+      {
+        "codes": 106,
+        "codesNum": 3,
+        "codesName": "生产/工艺/制造"
+      },
+      {
+        "codes": 106,
+        "codesNum": 4,
+        "codesName": "金融/银行/投资/保险"
+      },
+      {
+        "codes": 106,
+        "codesNum": 5,
+        "codesName": "商业/服务业/个体经营"
+      },
+      {
+        "codes": 106,
+        "codesNum": 6,
+        "codesName": "文化/广告/传媒"
+      },
+      {
+        "codes": 106,
+        "codesNum": 7,
+        "codesName": "娱乐/艺术/表演"
+      },
+      {
+        "codes": 106,
+        "codesNum": 8,
+        "codesName": "律师/法务"
+      },
+      {
+        "codes": 106,
+        "codesNum": 9,
+        "codesName": "教育/培训"
+      },
+      {
+        "codes": 106,
+        "codesNum": 10,
+        "codesName": "公务员/行政/事业单位"
+      },
+      {
+        "codes": 106,
+        "codesNum": 11,
+        "codesName": "模特"
+      },
+      {
+        "codes": 106,
+        "codesNum": 12,
+        "codesName": "航天"
+      },
+      {
+        "codes": 106,
+        "codesNum": 13,
+        "codesName": "学生"
+      },
+      {
+        "codes": 106,
+        "codesNum": 14,
+        "codesName": "房地产"
+      },
+      {
+        "codes": 106,
+        "codesNum": 15,
+        "codesName": "其他职业"
+      }
+    ],
+    "houseList": [
+      {
+        "codes": 107,
+        "codesNum": 1,
+        "codesName": "已购房"
+      },
+      {
+        "codes": 107,
+        "codesNum": 2,
+        "codesName": "未购房"
+      }
+    ],
+    "carList": [
+      {
+        "codes": 108,
+        "codesNum": 1,
+        "codesName": "已购车"
+      },
+      {
+        "codes": 108,
+        "codesNum": 2,
+        "codesName": "未购车"
+      }
+    ]
+  }
+]

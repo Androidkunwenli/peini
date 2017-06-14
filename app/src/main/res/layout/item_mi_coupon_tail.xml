@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:minHeight="100dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="没有更多可用券了"
+        android:textColor="@color/text999"
+        android:textSize="@dimen/textSize14" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="12dp"
+        android:layout_margin="2dp"
+        android:background="@color/view" />
+
+    <TextView
+        android:id="@+id/tv_show_overdue_coupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查看失效券"
+        android:textColor="@color/RED_FB4E30"
+        android:textSize="@dimen/textSize14" />
+
+</LinearLayout>

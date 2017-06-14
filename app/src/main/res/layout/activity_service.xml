@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorf9f9f9">
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/title_bj"
+            android:gravity="center|left"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_toolbar_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@mipmap/back"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/service"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize18" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="服务条款" />
+
+</LinearLayout>

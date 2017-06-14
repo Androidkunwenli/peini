@@ -1,0 +1,172 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'packer'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+    }
+}
+greendao {
+    schemaVersion 1
+    daoPackage 'com.jsz.peini.gen'
+    targetGenDir 'src/main/java'
+}
+repositories {
+    flatDir {
+        dir 'libs'
+    }
+}
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    signingConfigs {
+        release {
+            // 满足下面两个条件时需要此配置
+            // 1. Gradle版本 >= 2.14.1
+            // 2. Android Gradle Plugin 版本 >= 2.2.0
+            // 作用是只使用旧版签名，禁用V2版签名模式
+            v2SigningEnabled false
+//            storeFile file("G:\\workspace\\debug.keystore")
+//            storePassword "android"
+//            keyAlias "androiddebugkey"
+//            keyPassword "android"
+            storeFile file(RELEASE_STORE_FILE)
+            keyAlias RELEASE_KEY_ALIAS
+            storePassword RELEASE_KEY_PASSWORD
+            keyPassword RELEASE_STORE_PASSWORD
+        }
+
+        debug {
+            v2SigningEnabled false
+            storeFile file(RELEASE_STORE_FILE)
+            keyAlias RELEASE_KEY_ALIAS
+            storePassword RELEASE_KEY_PASSWORD
+            keyPassword RELEASE_STORE_PASSWORD
+        }
+
+    }
+    defaultConfig {
+        resConfigs "zh"
+        applicationId "com.jsz.peini"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 200
+        versionName "2.0.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        // Enabling multidex support.65536
+        multiDexEnabled true
+        //个推
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "DgmX1G4PPy8xo5ysuUa9r8",
+                GETUI_APP_KEY   : "6YLHyT0040AldPt78VEPj1",
+                GETUI_APP_SECRET: "tpb5OR2deh8w0otVsvmH96"
+        ]
+        ndk {
+            abiFilters 'armeabi-v7a'
+//            , 'arm64-v8a'
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            //优化
+            zipAlignEnabled true
+            //移除无用的resource文件
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+    dependencies {
+        compile fileTree(dir: 'libs', include: ['*.jar'])
+        androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+            exclude group: 'com.android.support', module: 'support-annotations'
+        })
+        testCompile 'junit:junit:4.12'
+        compile 'com.android.support:design:25.3.1'
+        compile 'com.android.support:recyclerview-v7:25.3.1'
+        //6553
+        compile 'com.android.support:multidex:1.0.1'
+        //注解框架
+        compile 'com.jakewharton:butterknife:6.1.0'
+        //图片
+        compile 'de.hdodenhof:circleimageview:2.1.0'
+        //轮播图
+        compile 'com.jude:rollviewpager:1.4.5'
+        //刷新列表
+        compile 'com.github.Aspsine:SwipeToLoadLayout:1.0.4'
+        //viewpaget 列表的战士
+        compile 'com.zhy:magic-viewpager:1.0.1'
+        //Retrofit2所需要的包
+        compile 'com.squareup.retrofit2:retrofit:2.2.0'
+        compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+        //星星控件
+        compile 'com.xingliuhua:xlhratingbar_lib:1.0.1'
+        //流式布局
+        compile 'com.zhy:flowlayout-lib:1.0.3'
+        //数据库
+        compile 'org.greenrobot:greendao:3.2.2'
+        compile 'org.greenrobot:greendao-generator:3.2.2'
+        //联动列表
+        compile 'com.wx.wheelview:wheelview:1.3.3'
+        //数据传递
+        compile 'org.greenrobot:eventbus:3.0.0'
+        //万能的适配器
+        compile 'com.yuyh.easyadapter:library:1.0.0'
+        //个推
+        compile 'com.getui:sdk:2.9.5.0'
+        //炫酷toast
+        compile 'com.github.GrenderG:Toasty:1.1.3'
+        //PhotoView
+        compile 'com.github.chrisbanes.photoview:library:1.2.4'
+        //压缩算法
+        compile 'me.shaohui.advancedluban:library:1.3.5'
+        //上拉加载更多的adapter
+        compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.13'
+    }
+}
+
+packer {
+    // 指定渠道打包输出文件名格式
+    archiveNameFormat = '陪你_${flavorName}_${versionName}'
+    // 指定渠道打包输出目录
+    archiveOutput = file(new File(project.rootProject.buildDir.path, "archives"))
+    // 指定渠道打包输出文件名格式
+    // 默认是 `${appPkg}-${flavorName}-${buildType}-v${versionName}-${versionCode}`
+    // archiveNameFormat = ''
+    // 是否检查Gradle配置中的signingConfig，默认不检查
+    // checkSigningConfig = false
+    // 是否检查Gradle配置中的zipAlignEnabled，默认不检查
+    // checkZipAlign = false
+}
+
+dependencies {
+    compile 'com.facebook.stetho:stetho:1.4.2'
+    compile 'com.facebook.stetho:stetho-okhttp3:1.4.2'
+    compile 'com.google.android.gms:play-services-appindexing:9.8.0'
+    compile 'com.mcxiaoke.gradle:packer-helper:1.0.9'
+    androidTestCompile 'junit:junit:4.12'
+    compile 'com.google.zxing:core:3.2.1'
+    //侧边栏的一些东西
+    compile project(':Sildinglibrary')
+    //环信
+    compile project(':easeUI_CN')
+}

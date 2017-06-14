@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white000"
+              android:orientation="vertical"
+              android:paddingTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/square_imageead"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:src="@mipmap/ic_nan"/>
+
+        <LinearLayout
+            android:id="@+id/ll_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/square_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="left|center"
+                android:text="陪你PN"
+                android:textColor="@color/text276396"
+                android:textSize="@dimen/textSize16"/>
+
+            <com.jsz.peini.widget.ExpandableTextView
+                android:id="@+id/square_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/y10"
+                android:textSize="@dimen/textSize16"
+                app:maxCollapsedLines="3"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/square_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/y10"
+                android:visibility="visible"/>
+
+
+            <TextView
+                android:id="@+id/square_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y5"
+                android:layout_marginTop="@dimen/y8"
+                android:gravity="left|center"
+                android:text="法国 * 巴黎"
+                android:textColor="@color/text999"
+                android:textSize="@dimen/textSize14"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/square_squareTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="2016年5月21日 上午 18:50"
+                    android:textColor="@color/text999"
+                    android:textSize="@dimen/textSize14"/>
+
+                <TextView
+                    android:id="@+id/square_delete_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:clickable="true"
+                    android:text="删除"
+                    android:textColor="@color/text276396"
+                    android:textSize="@dimen/textSize14"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/square_button_zan"
+                    android:layout_width="@dimen/x48"
+                    android:layout_height="@dimen/y48"
+                    android:layout_marginRight="@dimen/x30"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:src="@drawable/nozan"/>
+
+                <ImageView
+                    android:id="@+id/square_button_news"
+                    android:layout_width="@dimen/x48"
+                    android:layout_height="@dimen/y48"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:src="@drawable/pinglun"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sq_bj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/sq_bj"
+                android:gravity="center|left"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/x1"
+                android:paddingRight="@dimen/x5"
+                android:paddingTop="@dimen/x20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/square_like"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:visibility="visible"/>
+
+                    <TextView
+                        android:id="@+id/people_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:clickable="true"
+                        android:gravity="center|right"
+                        android:text="等13人赞过"
+                        android:textColor="@color/text276396"
+                        android:textSize="@dimen/textSize14"/>
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/square_commentlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/y5"
+                    android:paddingLeft="@dimen/x10"
+                    android:visibility="visible"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/view"/>
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_ssquare_five"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.jsz.peini.widget.squareimage.SquareImageViewTwo
+            android:id="@+id/iv_square_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="left"
+            android:scaleType="centerCrop"
+           />
+
+        <com.jsz.peini.widget.squareimage.SquareImageViewTwo
+            android:id="@+id/iv_square_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="right"
+            android:scaleType="centerCrop"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_canhide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.jsz.peini.widget.squareimage.SquareImageViewThree
+            android:id="@+id/iv_square_3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="left"
+            android:scaleType="centerCrop"/>
+
+        <com.jsz.peini.widget.squareimage.SquareImageViewThree
+            android:id="@+id/iv_square_4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"/>
+
+        <com.jsz.peini.widget.squareimage.SquareImageViewThree
+            android:id="@+id/iv_square_5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="right"
+            android:scaleType="centerCrop"/>
+    </FrameLayout>
+</LinearLayout>

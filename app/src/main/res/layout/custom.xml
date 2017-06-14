@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/toast_background"
+             android:gravity="center"
+             android:paddingBottom="10dp"
+             android:paddingLeft="30dp"
+             android:paddingRight="30dp"
+             android:paddingTop="10dp">
+    <!-- android:paddingBottom="30dp"
+                 android:paddingLeft="60dp"
+                 android:paddingRight="60dp"
+                 android:paddingTop="30dp"-->
+    <TextView
+        android:id="@+id/tvTextToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text333"
+        android:textSize="@dimen/textSize18"/>
+
+</FrameLayout>

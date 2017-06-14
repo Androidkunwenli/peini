@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/activity_advertisement"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white000"
+              android:clickable="true"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_adfirst"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_ad_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"
+            android:background="@color/white000"
+            android:clickable="true"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tv_jump_over"
+            android:layout_width="75dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_4circular_bj"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="跳过(3)"
+            android:textColor="#fff"
+            android:textSize="@dimen/textSize14"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:scaleType="centerInside"
+            android:src="@drawable/adv"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_splash_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/splash">
+
+        <ImageView
+            android:id="@+id/iv_splash_logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+</LinearLayout>
+
+

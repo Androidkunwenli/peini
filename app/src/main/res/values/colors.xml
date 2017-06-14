@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--性别-->
+    <color name="colorf9529d">#f9529d</color>
+    <!--标题背景-->
+    <color name="title_bj">#f9f9f9</color>
+    <color name="transparent">#9000</color>
+    <color name="red">#fb4e30</color>
+    <color name="view">#d6d6d6</color>
+    <color name="divider_e6e6e6">#e6e6e6</color>
+    <color name="white000">#FFFFFF</color>
+    <color name="white0000">#00FFFFFF</color>
+    <color name="white0000000">#00000000</color>
+    <color name="black">#2D2D2D</color>
+    <color name="gray">#B3B3B3</color>
+    <color name="grays">#e9e8e8</color>
+    <color name="grey_8f8f8f">#8f8f8f</color>
+    <color name="pink">#FEAB9B</color>
+    <color name="pink_deep">#fb4e30</color>
+    <color name="text999">#999999</color>
+    <color name="text333">#333333</color>
+    <color name="text000">#000000</color>
+    <color name="deepGray">#333333</color>
+    <color name="SpannableString">#274b96</color>
+    <color name="hei">#000</color>
+    <color name="hui">#0000</color>
+    <color name="cccccc">#ccc</color>
+    <!--排行榜-->
+    <color name="yi">#ffc000</color>
+    <color name="er">#c0bdbe</color>
+    <color name="san">#c6aa8c</color>
+
+    <color name="nan">#28c6dd</color>
+    <color name="nv">#fa509e</color>
+
+
+    <!--图片-->
+    <color name="bottom_bg">#aaaaaa</color>
+
+    <!--=============手势密码-->
+    <color name="grey_f6f6f6">#f6f6f6</color>
+    <color name="grey_a5a5a5">#A5A5A5</color>
+    <color name="grey_dde1e7">#DDE1E7</color>
+    <color name="red_f4333c">#F4333C</color>
+
+    <color name="colorf9f9f9">#f9f9f9</color>
+    <color name="backgroundf1f1f1">#f1f1f1</color>
+    <color name="login_colorA">#FEAB9B</color>
+    <color name="RED_FB4E30">#FB4E30</color>
+    <color name="viewcdcdcd">#cdcdcd</color>
+    <color name="main_secondary">#ff666666</color>
+    <color name="bj_4c4c4c">#4c4c4c4c</color>
+    <color name="bj_2bc6dd">#2bc6dd</color>
+    <color name="text276396">#276396</color>
+    <!--日期-->
+    <!-- QRCode scanner color begin -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#B0000000</color>
+    <color name="viewfinder_frame">#90FFFFFF</color>
+    <color name="result_point_color">#C0FFFF00</color>
+    <color name="laser_color">#0F0</color>
+    <color name="corner_color">#00FF00</color>
+    <!-- QRCode scanner color end -->
+</resources>

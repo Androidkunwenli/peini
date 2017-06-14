@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white0000000"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/point_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="@dimen/y90"
+            android:src="@drawable/hend_bj" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/point_icronin"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y100"
+            app:civ_border_color="@color/text999"
+            app:civ_border_width="1dp"/>
+
+        <TextView
+            android:id="@+id/point_number"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="right"
+            android:background="@drawable/peini_yuan"
+            android:gravity="center"
+            android:maxLength="2"
+            android:text=""
+            android:textColor="@color/white000"
+            android:textSize="@dimen/textSize12" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/point_sports"
+        android:layout_width="@dimen/x35"
+        android:layout_height="@dimen/y35"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="@dimen/y5"
+        android:background="@mipmap/white_bj_circular" />
+
+</LinearLayout>

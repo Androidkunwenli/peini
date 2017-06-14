@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white000"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_gravity="bottom"
+        android:background="@color/view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/square_periphery_item"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/square_periphery_name"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="希尔顿大酒店"
+                android:textColor="#333"
+                android:textSize="@dimen/textSize15"/>
+
+            <TextView
+                android:id="@+id/square_periphery_address"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="石家庄"
+                android:textColor="#999"
+                android:textSize="@dimen/textSize10"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/square_periphery_address_selete"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/dui"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

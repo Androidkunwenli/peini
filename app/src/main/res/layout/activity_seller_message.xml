@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroundf1f1f1"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorf9f9f9">
+
+        <LinearLayout
+            android:id="@+id/seller_message_toolbar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/title_bj"
+            android:gravity="center|left"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@mipmap/back"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/seller_title_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#333"
+            android:textSize="@dimen/textSize16"/>
+
+        <LinearLayout
+            android:id="@+id/ll_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/seller_report"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingLeft="4dp"
+                android:paddingRight="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/jb"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/seller_share"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingLeft="4dp"
+                android:paddingRight="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/fx"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"/>
+
+    <com.jsz.peini.widget.ProgressActivity
+        android:id="@+id/pa_progress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:id="@+id/sv_show_seller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_viewpager_bj"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_peini_banser"/>
+
+                    <com.jude.rollviewpager.RollPagerView
+                        android:id="@+id/imageList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:rollviewpager_play_delay="3000"/>
+                </FrameLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/view"/>
+
+                <TextView
+                    android:id="@+id/sellerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white000"
+                    android:maxLines="1"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:text=" "
+                    android:textColor="@color/text333"
+                    android:textSize="18dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white000"
+                    android:gravity="left|center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp">
+
+                    <RatingBar
+                        android:id="@+id/sellerScore"
+                        style="@style/roomRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:numStars="5"
+                        android:rating="0"
+                        android:stepSize="0.1">
+                    </RatingBar>
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="¥ 0/人"
+                        android:textColor="#666666"
+                        android:textSize="14dp"/>
+
+                    <TextView
+                        android:id="@+id/distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:text="0km"
+                        android:textColor="@color/text999"
+                        android:textSize="14dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white000"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_weather_order"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center|left"
+                        android:orientation="horizontal"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:id="@+id/iv_remindtext"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@mipmap/ic_order"/>
+
+                        <TextView
+                            android:id="@+id/tv_remindtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="15dp"
+                            android:text="店铺必须先预订"
+                            android:textColor="#666666"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/backgroundf1f1f1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white000"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/map"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/districtNamesellerAddress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:drawableLeft="@mipmap/map"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text=" "
+                        android:textColor="@color/text333"
+                        android:textSize="@dimen/textSize14"/>
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="30dp"
+                        android:background="@color/view"/>
+
+                    <ImageView
+                        android:id="@+id/sellerPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/call"
+                        android:clickable="true"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white000"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/sellerMeal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="口味: 10"
+                        android:textColor="#999"
+                        android:textSize="@dimen/textSize16"/>
+
+                    <TextView
+                        android:id="@+id/sellerCondition"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="环境: 10"
+                        android:textColor="#999"
+                        android:textSize="@dimen/textSize16"/>
+
+                    <TextView
+                        android:id="@+id/sellerServer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="服务: 10"
+                        android:textColor="#999"
+                        android:textSize="@dimen/textSize16"/>
+
+                    <ImageView
+                        android:id="@+id/isWifi"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/y25"
+                        android:layout_weight=".7"
+                        android:gravity="center"
+                        android:src="@drawable/nowifi"/>
+
+                    <ImageView
+                        android:id="@+id/isParking"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/y25"
+                        android:layout_weight=".7"
+                        android:gravity="center"
+                        android:src="@drawable/noparking"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white000"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/backgroundf1f1f1"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/maidan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white000"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:visibility="visible">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center|left"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:src="@mipmap/maidan"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginRight="15dp"
+                                android:text="买单"
+                                android:textColor="@color/text333"
+                                android:textSize="14dp"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/couponJb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:paddingLeft="18dp"
+                            android:text="金币买单8.5折,微信买单9折,支付宝买单9折"
+                            android:textColor="@color/text999"
+                            android:textSize="@dimen/textSize14"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"
+                            android:background="@color/backgroundf1f1f1"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/youhui"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white000"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center|left"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:src="@mipmap/youhui"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginRight="15dp"
+                                android:text="优惠"
+                                android:textColor="@color/text333"
+                                android:textSize="14dp"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/couponMj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:paddingLeft="18dp"
+                            android:text="消费满200赠20券,消费满300赠30券"
+                            android:textColor="@color/text999"
+                            android:textSize="@dimen/textSize14"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"
+                            android:background="@color/backgroundf1f1f1"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_discount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white000"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center|left"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:src="@mipmap/discount"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginRight="15dp"
+                                android:text="营业时间"
+                                android:textColor="@color/text333"
+                                android:textSize="14dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_time1_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="18dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_weekNum"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="周一至周五"
+                                    android:textColor="@color/text999"
+                                    android:textSize="@dimen/textSize14"/>
+
+                                <TextView
+                                    android:id="@+id/tv_opList"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:lineSpacingExtra="9dp"
+                                    android:text=""
+                                    android:textColor="@color/text999"
+                                    android:textSize="@dimen/textSize14"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_time6_7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_weekNum2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="周一至周五"
+                                    android:textColor="@color/text999"
+                                    android:textSize="@dimen/textSize14"/>
+
+                                <TextView
+                                    android:id="@+id/tv_opList2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:lineSpacingExtra="9dp"
+                                    android:text=""
+                                    android:textColor="@color/text999"
+                                    android:textSize="@dimen/textSize14"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"
+                            android:background="@color/backgroundf1f1f1"/>
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/backgroundf1f1f1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white000"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="10dp"
+                        android:text="店铺介绍"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize16"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/backgroundf1f1f1"/>
+
+                    <WebView
+                        android:id="@+id/seller_message_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/white000"/>
+
+                    <ImageView
+                        android:id="@+id/seller_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@mipmap/meinv"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.jsz.peini.widget.ProgressActivity>
+
+
+    <TextView
+        android:id="@+id/sellermessage_paythebill"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/RED_FB4E30"
+        android:gravity="center"
+        android:text="@string/paythebill"
+        android:textColor="@color/white000"
+        android:textSize="@dimen/textSize16"
+        android:visibility="gone"/>
+
+</LinearLayout>

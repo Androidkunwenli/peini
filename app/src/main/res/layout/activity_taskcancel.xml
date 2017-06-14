@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroundf1f1f1"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <RadioGroup
+        android:id="@+id/rg_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RadioButton
+            android:id="@+id/task_radiobutton1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white000"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/checkbox_style_seller"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="双方协商取消"
+            android:textColor="@color/text333"
+            android:textSize="@dimen/textSize14"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/view"/>
+
+        <RadioButton
+            android:id="@+id/task_radiobutton2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white000"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/checkbox_style_seller"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="个人原因取消"
+            android:textColor="@color/text333"
+            android:textSize="@dimen/textSize14"/>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/view"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="@dimen/x15"
+        android:lineSpacingExtra="5dp"
+        android:text="温馨提示:\n1、个人原因取消任务将扣除您一定的信用值。\n2、双方协商取消任务不扣除信用值，但须对方同意。"/>
+</LinearLayout>

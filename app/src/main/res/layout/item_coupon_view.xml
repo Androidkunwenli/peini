@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_coupon_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/available_coupon_background"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:id="@+id/tv_discount_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="¥"
+        android:textColor="#fb4e30"
+        android:textSize="@dimen/textSize20" />
+
+    <TextView
+        android:id="@+id/tv_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_discount_label"
+        android:layout_alignBottom="@id/tv_discount_label"
+        android:layout_toEndOf="@id/tv_discount_label"
+        android:layout_toRightOf="@id/tv_discount_label"
+        android:textColor="#fb4e30"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_coupon_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_discount"
+        android:layout_below="@id/tv_discount"
+        android:gravity="center"
+        android:text="现金券"
+        android:textColor="@color/text999"
+        android:textSize="@dimen/textSize12" />
+
+    <CheckBox
+        android:id="@+id/cb_choose_coupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:button="@null"
+        android:clickable="false"
+        android:drawableLeft="@drawable/pay_seller_recharge"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/tv_days_to_expiration"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="#fb4e30"
+        android:textSize="@dimen/textSize12" />
+
+    <TextView
+        android:id="@+id/tv_coupon_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#fb4e30"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_coupon_range"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_coupon_name"
+        android:layout_below="@id/tv_coupon_name"
+        android:layout_toLeftOf="@id/cb_choose_coupon"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" />
+
+</RelativeLayout>

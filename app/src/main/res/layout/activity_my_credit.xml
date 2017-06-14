@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundf1f1f1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/view" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white000"
+                android:gravity="center"
+                android:paddingBottom="20dp"
+                android:paddingTop="15dp"
+                android:text="信用越高，任务成功率越高"
+                android:textColor="#666666"
+                android:textSize="@dimen/textSize16" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white000">
+
+                <ImageView
+                    android:id="@+id/iv_credit_background"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:src="@mipmap/creditbj"/>
+
+                <com.jsz.peini.ui.view.square.MyColorProgressBar
+                    android:id="@+id/cpb_credit_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    app:front_color1="#fb4e30"
+                    app:front_color2="#fb4e30"
+                    app:front_color3="#fb4e30"
+                    app:is_need_content="true"
+                    app:is_need_title="true"
+                    app:is_need_unit="true"
+                    app:max_value="100"
+                    app:string_title="信用一般"
+                    app:string_unit="评估于2017-01-01" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/view" />
+
+            <LinearLayout
+                android:id="@+id/ll_mimessage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="个人资料"
+                        android:textColor="@color/text333"
+                        android:textSize="@dimen/textSize16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="完善个人资料可提高信用值"
+                        android:textColor="@color/text999"
+                        android:textSize="@dimen/textSize12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="完善度"
+                        android:textColor="@color/text999"
+                        android:textSize="@dimen/textSize13" />
+
+                    <com.jsz.peini.ui.view.TextProgressBar
+                        android:id="@+id/tpb_self_info_score"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="80dp"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="2dp"
+                        android:max="100"
+                        android:progressDrawable="@drawable/progressbar_color" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:background="@mipmap/backselect" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/view" />
+
+            <LinearLayout
+                android:id="@+id/ll_identity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="身份认证"
+                        android:textColor="@color/text333"
+                        android:textSize="@dimen/textSize16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="完成身份认证可提高信用值"
+                        android:textColor="@color/text999"
+                        android:textSize="@dimen/textSize12" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="完成度"
+                        android:textColor="@color/text999"
+                        android:textSize="@dimen/textSize13" />
+
+                    <com.jsz.peini.ui.view.TextProgressBar
+                        android:id="@+id/tpb_id_card_score"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="80dp"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="2dp"
+                        android:max="100"
+                        android:progressDrawable="@drawable/progressbar_color" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:background="@mipmap/backselect" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/view" />
+
+            <LinearLayout
+                android:id="@+id/ll_mitask"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="任务互动"
+                        android:textColor="@color/text333"
+                        android:textSize="@dimen/textSize16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="完成任务互动可提高信用值"
+                        android:textColor="@color/text999"
+                        android:textSize="@dimen/textSize12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="完成度"
+                        android:textColor="@color/text999"
+                        android:textSize="@dimen/textSize13" />
+
+                    <com.jsz.peini.ui.view.TextProgressBar
+                        android:id="@+id/tpb_task_score"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="80dp"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="2dp"
+                        android:max="100"
+                        android:progressDrawable="@drawable/progressbar_color" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:background="@mipmap/backselect" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/view" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

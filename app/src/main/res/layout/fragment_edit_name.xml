@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/shape_imagehead"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp">
+
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_nan"/>
+
+        <ImageView
+            android:id="@+id/iv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/image_hend_looding"/>
+    </FrameLayout>
+
+
+    <!--Html.fromHtml("<b><small><font color=#ff0000>" + pre + "</b><small/><font/>" +
+                    "<big>" + time + "</big>")-->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="请换上真实头像"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_content_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text=" "
+        android:textColor="#999999"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/tv_content_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text=" "
+        android:textColor="#999999"
+        android:textSize="14dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_button_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_corner"
+        android:paddingBottom="15dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="15dp"
+        android:text="我知道了"
+        android:textColor="#fff"
+        android:textSize="14dp"/>
+
+</LinearLayout>

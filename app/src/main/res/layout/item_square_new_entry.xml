@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white000"
+                android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_square_new_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:src="@mipmap/meinv"/>
+
+    <TextView
+        android:id="@+id/tv_square_new_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_square_new_image"
+        android:layout_toEndOf="@+id/iv_square_new_image"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="赵亚坤"
+        android:textColor="@color/text333"
+        android:textSize="@dimen/textSize16"/>
+
+    <TextView
+        android:id="@+id/tv_square_new_contex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_square_new_name"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/iv_square_new_image"
+        android:layout_toRightOf="@id/iv_square_new_image"
+        android:text="这个内容已经被删除了啊哥"
+        android:textColor="@color/text333"
+        android:textSize="@dimen/textSize14"/>
+
+    <TextView
+        android:id="@+id/iv_square_new_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_square_new_contex"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/iv_square_new_image"
+        android:layout_toRightOf="@id/iv_square_new_image"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="昨天 18:00"
+        android:textColor="@color/text999"/>
+
+    <TextView
+        android:id="@+id/tv_square_new_contex_or_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:ellipsize="end"
+        android:text="我就知道阿斯蒂芬啥地方你是这个情况啊阿斯顿.."
+        android:textSize="@dimen/textSize14"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/view"/>
+</RelativeLayout>
